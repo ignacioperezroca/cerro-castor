@@ -11,18 +11,22 @@
     ?>
     <title><?php echo "$title"; ?></title>
     <?php echo $metaDescription; ?>
-    <meta property="fb:app_id" content="000"/>
+    <meta property="fb:app_id" content="1404951642894424"/>
+    <meta property="fb:admins" content="704333312"/>
+
     <meta property="og:title" content="Krundi - Mascota oficial de Cerro Castor"/>
     <meta property="og:description" content="¡Seguí sus aventuras en el centro de esquí más austral del mundo!" />
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.krundi.com.ar">
-    <meta property="og:image" content="http://www.krundi.com.ar/dev/images/facebook-og.png" />
+    <meta property="og:url" content="http://krundi.com.ar">
+    <meta property="og:image" content="http://krundi.com.ar/images/facebook-og.png" />
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Krundi - Mascota oficial de Cerro Castor" />
     <meta name="twitter:description" content="¡Seguí sus aventuras en el centro de esquí más austral del mundo!" />
-    <meta name="twitter:image" content="http://www.krundi.com.ar/dev/images/twitter-card.png" />
-    <meta name="twitter:site" content="@account" />
-    <meta name="twitter:creator" content="@account" />
+    <meta name="twitter:image" content="http://krundi.com.ar/images/twitter-card.png" />
+    <meta name="twitter:site" content="@KrundiCastor" />
+    <meta name="twitter:creator" content="@KrundiCastor" />
+
     <link rel="icon" href="images/favicon.ico">
     <!-- CSS -->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -35,10 +39,12 @@
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-111111-1', 'auto');
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-29593043-2', 'auto');
       ga('send', 'pageview');
-  </script>
+
+    </script>
   </head>
   <body>
     <!-- .wrapper -->

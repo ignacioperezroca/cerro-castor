@@ -52,6 +52,8 @@
                     <br><br>
                     <span class="weight-black yellow">Si te lo cruzás, ¡invitale un chocolate caliente!</span>
                   </p>
+                  <div class="margintop20 hidden-md-down"></div>
+                  <div class="margintop60 hidden-sm-up"></div>
                 </div>
               </div>
             </div>
@@ -87,76 +89,42 @@
               <h1 class="section-title font20 weight-medium">Dejale tu mensaje a</h1>
               <h1 class="section-title mt-4 weight-regular">#KrundiCastor</h1>
               <div class="row margintop40">
+
+
+                <?php
+                $bd = new SQLite3('krundi.db');
+
+                $results = $bd->query('SELECT * FROM instagram ORDER BY ID DESC');
+
+                while ($row = $results->fetchArray()) {
+                    
+                
+                ?>
+
                 <div class="col-xs-12 col-md-4">
                   <div class="margintop30 visible-md-up"></div>
                   <div class="white-card">
-                    <img src="images/krundi-front.png" alt="" class="img-center full-width">
+                    <a href="https://www.instagram.com/p/<?=$row['URL']?>" target="_blank"><img src="<?=$row['IMG']?>" alt="" class="img-center full-width"></a>
                     <div class="txt-container">
-                      <p><span>@pipo </span>Lorem ipsum dolor sit amet, <span>#tester </span>consectetur adipisicing elit. Adipisci molestiae, fuga id quisquam necessitatibus est velit corporis quia illum asperiores?</p>
+                      <p><?=$row['TEXT']?></p>
                       <img src="images/border-white.png" alt="" class="border-texture blog">
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                  <div class="margintop30 visible-md-up"></div>
-                  <div class="white-card">
-                    <img src="images/krundi-front.png" alt="" class="img-center full-width">
-                    <div class="txt-container">
-                      <p><span>@pipo </span>Lorem ipsum dolor sit amet, <span>#tester </span>consectetur adipisicing elit. Adipisci molestiae, fuga id quisquam necessitatibus est velit corporis quia illum asperiores?</p>
-                      <img src="images/border-white.png" alt="" class="border-texture blog">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                  <div class="margintop30 visible-md-up"></div>
-                  <div class="white-card">
-                    <img src="images/krundi-front.png" alt="" class="img-center full-width">
-                    <div class="txt-container">
-                      <p><span>@pipo </span>Lorem ipsum dolor sit amet, <span>#tester </span>consectetur adipisicing elit. Adipisci molestiae, fuga id quisquam necessitatibus est velit corporis quia illum asperiores?</p>
-                      <img src="images/border-white.png" alt="" class="border-texture blog">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-12 col-md-4">
-                  <div class="margintop30 visible-md-up"></div>
-                  <div class="white-card">
-                    <img src="images/krundi-front.png" alt="" class="img-center full-width">
-                    <div class="txt-container">
-                      <p><span>@pipo </span>Lorem ipsum dolor sit amet, <span>#tester </span>consectetur adipisicing elit. Adipisci molestiae, fuga id quisquam necessitatibus est velit corporis quia illum asperiores?</p>
-                      <img src="images/border-white.png" alt="" class="border-texture blog">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                  <div class="margintop30 visible-md-up"></div>
-                  <div class="white-card">
-                    <img src="images/krundi-front.png" alt="" class="img-center full-width">
-                    <div class="txt-container">
-                      <p><span>@pipo </span>Lorem ipsum dolor sit amet, <span>#tester </span>consectetur adipisicing elit. Adipisci molestiae, fuga id quisquam necessitatibus est velit corporis quia illum asperiores?</p>
-                      <img src="images/border-white.png" alt="" class="border-texture blog">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                  <div class="margintop30 visible-md-up"></div>
-                  <div class="white-card">
-                    <img src="images/krundi-front.png" alt="" class="img-center full-width">
-                    <div class="txt-container">
-                      <p><span>@pipo </span>Lorem ipsum dolor sit amet, <span>#tester </span>consectetur adipisicing elit. Adipisci molestiae, fuga id quisquam necessitatibus est velit corporis quia illum asperiores?</p>
-                      <img src="images/border-white.png" alt="" class="border-texture blog">
-                    </div>
-                  </div>
-                  <div class="margintop100 visible-md-down"></div>
-                </div>
+
+                <?php
+                }
+                ?>
+
+
+
               </div>
             </div>
             <img src="images/border-black.png" alt="" class="border-texture last">
             <footer>
               <div class="container-fluid">
                 <div class="row">
-                  <div class="crj-terms">
+                  <div class="crj-terms uppercase">
                     <p>KRUNDI El Castor - Mascota oficial de Cerro Castor</p>
                   </div>
                   <div class="developed-thet">
