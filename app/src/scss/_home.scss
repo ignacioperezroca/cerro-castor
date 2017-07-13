@@ -256,7 +256,7 @@ footer{
 .navbar-right{
   position: absolute;
   top: 50%;
-  right: 55px;
+  right: 0px;
   @include transform(translate(0%, -50%));
   .project-logo{
     color: #fff;
@@ -350,9 +350,9 @@ footer{
 
 .arrow-container{
   position: absolute;
-  bottom: 15px;
+  bottom: 10px;
   left: 50%;
-  padding: 10px;
+  padding: 7px;
   cursor: pointer;
   display: inline-block;
   border: solid white;
@@ -360,18 +360,31 @@ footer{
   @include transform(translate(-50%, -50%) rotate(45deg));
 }
 
+.border-circle {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  @include transform(translate(-50%, -50%));
+  @include transition;
+}
 .cerro-logo{
   @include transition;
 }
 
-.fp-viewing-section-00{
+.fp-viewing-section-krundi{
   .arrow-container,
   .fp-controlArrow{
-    border: solid black;
+    // border: solid black;
     border-width: 0 3px 3px 0;
   }
 }
-.fp-viewing-section-01{
+
+.fp-viewing-section-historia--krund{
   .fp-tableCell{
     // background-color: #3042b3;
   }
@@ -379,21 +392,16 @@ footer{
     line-height: 1.6;
   }
 }
-.fp-viewing-section-02{
+.fp-viewing-section-historia--krundi{
   .arrow-container,
   .fp-controlArrow{
-    border: solid black;
     border-width: 0 3px 3px 0;
   }
 }
-.fp-viewing-section-03{
+.fp-viewing-section-perfil{
   .arrow-container,
   .fp-controlArrow{
-    border: solid black;
-    border-width: 0 1px 1px 0;
-  }
-  .arrow-container{
-    display: none;
+    border-width: 0 3px 3px 0;
   }
   .navbar-right{
     .social-block{
@@ -404,6 +412,11 @@ footer{
         }
       }
     }
+  }
+}
+.fp-viewing-section-instagram{
+  .border-circle{
+    display: none;
   }
 }
 
@@ -419,25 +432,25 @@ footer{
   img:nth-child(3){
     left: -300px;
     opacity: 0;
-    @include transform(rotate(0deg) scale(1) translate(0px, -140px));
+    @include transform(rotate(0deg) scale(1) translate(0, 45px));
   }
   img:nth-child(4){
     bottom: 0px;
     opacity: 0;
-    @include transform(rotate(-15deg) scale(1) translate(0px, 90px));
+    @include transform(rotate(-15deg) scale(1) translate(0, 150px));
   }
   &.img-03{
     img:nth-child(3){
       left: 0;
       opacity: 1;
-    @include transform(rotate(0deg) scale(1) translate(0px, -140px));
+    @include transform(rotate(0deg) scale(1) translate(0, 45px));
     }
   }
   &.img-04{
     img:nth-child(4){
       bottom: 0;
       opacity: 1;
-      @include transform(rotate(0deg) scale(1) translate(0px, 0px));
+      @include transform(rotate(0deg) scale(1) translate(0, 45px));
     }
   }
 }
@@ -648,10 +661,55 @@ footer{
   @include transform(translate(-50%, -50%) !important);
 }
 
+.fp-viewing-section-historia--krund,
+.fp-viewing-section-historia--krundi,
+.fp-viewing-section-perfil,
+.fp-viewing-section-instagram{
+  nav{
+    &.navbar{
+      .navbar-right{
+        opacity: 0;
+        right: -300px;
+      }
+    }
+  }
+}
+
 // HOME RESPONSIVE
 //////////////////////////////////////////////////////////////////////////////////////////
 
 @media (min-width: 768px) {
+  .border-circle {
+    &:hover {
+      background: white;
+      box-shadow: 0 7px 15px rgba(0, 0, 0, 0.35);
+      .arrow-container{
+        border: solid black;
+        border-width: 0 3px 3px 0;
+      }
+    }
+  }
+
+  .fp-viewing-section-historia--krund,
+  .fp-viewing-section-historia--krundi,
+  .fp-viewing-section-perfil,
+  .fp-viewing-section-instagram{
+    nav{
+      &.navbar{
+        .navbar-right{
+          opacity: 1;
+          right: 55px;
+        }
+      }
+    }
+  }
+  nav{
+    &.navbar{
+      .navbar-right{
+        right: 55px;
+      }
+    }
+  }
 
   .krundi-anm--container{
     img:nth-child(1){
@@ -737,7 +795,7 @@ footer{
     }
   }
   .arrow-container{
-    bottom: 20px;
+    // bottom: 20px;
   }
 }
 

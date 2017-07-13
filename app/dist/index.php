@@ -5,7 +5,7 @@
     <div class="container-fluid">
       <div class="row">
         <div id="fullpage">
-          <div class="section section-00" data-anchor='section-00'>
+          <div class="section section-00" data-anchor='section-krundi'>
             <div class="krundi-anm--container">
               <img src="images/krundi-part-02.png" alt="" class="img-center krundi hidden-sm-down">
               <img src="images/krundi-part-01.png" alt="" class="img-center krundi hidden-sm-down">
@@ -13,9 +13,11 @@
               <img src="images/krundi-part-03.png" alt="" class="img-center krundi hidden-md-up">
             </div>
             <img src="images/border-blue.png" alt="" class="border-texture">
-            <div class="arrow-container moveSectionDown"></div>
+            <div class="border-circle">
+              <div class="arrow-container moveSectionDown"></div>
+            </div>
           </div>
-          <div class="section section-01" data-anchor='section-01'>
+          <div class="section section-01" data-anchor='section-historia--krund'>
             <div class="container-centered">
               <h1 class="section-title">Historia</h1>
               <div class="row margintop40">
@@ -30,13 +32,16 @@
                     Por su conocimiento de la zona guió a los agentes que prestaban ese servicio, enseñándoles a armar sus propios esquíes cuando en invierno era imposible atravesar el área a caballo.  
                   </p>
                   <div class="margintop60"></div>
-                  <img src="images/miscelanea.png" alt="" class="img-center">
+                  <img src="images/miscelanea.png" alt="" class="img-center hidden-sm-down">
                 </div>
                 <div class="col-xs-12 col-md-6">
-                  <div class="margintop60 hidden-md-up"></div>
                   <img src="images/ernesto-krund.png" alt="">
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="section section-01" data-anchor='section-historia--krundi'>
+            <div class="container-centered">
               <div class="row">
                 <div class="col-xs-12 col-md-6">
                   <div class="margintop60 hidden-md-up"></div>
@@ -59,7 +64,7 @@
             </div>
             <img src="images/border-yellow.png" alt="" class="border-texture">
           </div>
-          <div class="section section-02" data-anchor='section-02'>
+          <div class="section section-02" data-anchor='section-perfil'>
             <div class="container-centered">
               <div class="row">
                 <div class="col-xs-12 col-md-6">
@@ -84,11 +89,11 @@
             </div>
             <img src="images/border-red.png" alt="" class="border-texture">
           </div>
-          <div class="section section-03" data-anchor='section-03'>
+          <div class="section section-03" data-anchor='section-instagram'>
             <div class="container-centered">
-              <h1 class="section-title font20 weight-medium">Dejale tu mensaje a</h1>
-              <h1 class="section-title mt-4 weight-regular">#KrundiCastor</h1>
-              <div class="row margintop40">
+              <h1 class="section-title font20 weight-medium">Compartí tu foto con</h1>
+              <h1 class="section-title mt-4 weight-regular">#Krundi</h1>
+              <div class="row margintop40 marginbottom100">
 
 
                 <?php
@@ -98,7 +103,6 @@
 
                 while ($row = $results->fetchArray()) {
                     
-                
                 ?>
 
                 <div class="col-xs-12 col-md-4">
@@ -116,20 +120,23 @@
                 }
                 ?>
 
-
-
               </div>
             </div>
             <img src="images/border-black.png" alt="" class="border-texture last">
             <footer>
               <div class="container-fluid">
                 <div class="row">
-                  <div class="crj-terms uppercase">
+                  <div class="social-block margintop20 marginbottom10 hidden-sm-up">
+                    <a href="https://www.facebook.com/KrundiCastor/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/krundicastor" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/krundicastor" target="_blank"><i class="fa fa-instagram"></i></a>
+                  </div>
+                  <div class="crj-terms">
                     <p>KRUNDI El Castor - Mascota oficial de Cerro Castor</p>
                   </div>
                   <div class="developed-thet">
                     <a href="http://thet.com.ar/" target="_blank">
-                      <p>desarrollado por</p>
+                      <p>Desarrollado por</p>
                       <img src="http://carajoweb.com/landingapp/img/thet-logo.png" alt="img-carajo">
                     </a>
                   </div>

@@ -94,12 +94,15 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </div> -->
-                <a href="./" class="navbar-brand brand-img">
+                <a href="http://cerrocastor.com" target="_blank" class="navbar-brand brand-img">
                   <img src="images/brand-logo.png" alt="Brand" class="cerro-logo">
+                  </a>
+                <a href="./" class="navbar-brand brand-img">
                   <img src="images/krundi-logo.png" alt="Brand" class="krundi-logo">
+                  </a>
                   <!-- <div>Title</div> -->
                 </a>
-                <div class="navbar-right hidden-md-down">
+                <div class="navbar-right">
                   <div class="social-block">
                     <a href="https://www.facebook.com/KrundiCastor/" target="_blank"><i class="fa fa-facebook"></i></a>
                     <a href="https://twitter.com/krundicastor" target="_blank"><i class="fa fa-twitter"></i></a>
