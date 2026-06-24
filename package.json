@@ -1,0 +1,9 @@
+{
+  "name": "cerro-castor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Modernized static entry for the Cerro Castor legacy project.",
+  "scripts": {
+    "vercel-build": "echo \"Static site ready\""
+  }
+}
